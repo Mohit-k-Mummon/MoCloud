@@ -7,6 +7,12 @@
     --color-body: #918ca4;
 }
 
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 
 
 
@@ -43,6 +49,10 @@ h3 {
 p {
     font-size: 2.4rem;
     margin-top: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media screen and (min-width:768px) {
@@ -131,4 +141,86 @@ p {
         font-size: 1.2rem;
         padding: 0.8rem 1.2rem;
     }
+}
+
+
+
+
+/* Buttons */
+a.btn {
+    display: inline-block;
+    padding: 2.1rem 3rem;
+    text-align: center;
+}
+
+a.btn--block {
+    display: block;
+}
+
+a.btn--stretched {
+    padding: 2.1rem 8rem;
+}
+
+.btn {
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 2.5rem 3rem;
+    text-transform: uppercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.btn--stretched {
+    padding: 2.5rem 8rem;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+}
+
+.btn--primary:hover {
+    background: #0866e0;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+    background: #00abc9;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+}
+
+.btn--accent:hover {
+    background: #dd2c00;
+}
+
+.btn.btn--outline {
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+    padding: 1.9rem 3rem;
+}
+
+.btn.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+}
+
+.btn.btn--outline.btn--block {
+    display: block;
+}
+
+.btn.btn--outline.btn--stretched {
+    padding: 1.9rem 8rem;
 }
