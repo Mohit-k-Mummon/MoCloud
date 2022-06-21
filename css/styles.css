@@ -224,3 +224,30 @@ a.btn--stretched {
 .btn.btn--outline.btn--stretched {
     padding: 1.9rem 8rem;
 }
+
+@media screen and (min-width:768px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/* Lists */
+.list {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+.list--checks {
+    padding-left: 3rem;
+    list-style-image: url(/images/tick.svg);
+}
+
+.list__item {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
