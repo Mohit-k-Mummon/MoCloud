@@ -62,3 +62,32 @@ p {
         font-size: 1.8rem;
     }
 }
+
+
+
+
+/* Link-arrow */
+.link-arrow {
+    color: var(--color-accent);
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+
+.link-arrow::after {
+    content: '-->';
+    padding-left: 5px;
+    transition: 0.3s ease-out;
+}
+
+.link-arrow:hover::after {
+    padding-left: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .link-arrow {
+        font-size: 1.5rem;
+    }
+}
