@@ -285,6 +285,11 @@ a.btn--stretched {
     fill: var(--color-primary);
 }
 
+.icon--white {
+    fill: #fff;
+}
+
+
 .icon-container {
     display: inline-flex;
     background: #f3f9fa;
@@ -293,6 +298,10 @@ a.btn--stretched {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+.icon-container--accent {
+    background: var(--color-accent);
 }
 
 
@@ -456,7 +465,7 @@ a.btn--stretched {
 /* Media */
 .media {
     display: flex;
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 
 .media__image {
@@ -493,11 +502,12 @@ a.btn--stretched {
 
 /* Quotes */
 .quote {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-style: italic;
     color: var(--color-body);
     font-weight: 500;
     line-height: 1.4;
+    margin: 2rem;
 }
 
 .quote::before {
@@ -527,6 +537,29 @@ a.btn--stretched {
     bottom: 15px;
 }
 
+@media screen and (max-width:375px) {
+    .quote__body {
+        margin-left: 0;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+    }
+
+    .quote__author {
+        font-size: 1.5rem;
+    }
+
+    .quote__company {
+        font-size: 1.2rem;
+    }
+
+    .quote__line {
+        transform: scale(0.7);
+        bottom: 25px;
+    }
+}
+
 @media screen and (min-width:768px) {
     .quote {
         font-size: 2.4rem;
@@ -538,5 +571,56 @@ a.btn--stretched {
 
     .quote__company {
         font-size: 1.6rem;
+    }
+}
+
+
+
+
+/* Testimonial */
+.testimonial__grid {
+    padding: 2rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > img {
+    width: 100%;
+    padding: 1rem;
+}
+
+.testimonial .quote {
+    margin-top: 2rem;
+}
+
+.testimonial__icon {
+    transform: scale(0.9);
+    position: absolute;
+    right: -20px;
+    top: 30px;
+}
+
+@media screen and (max-width:375px) {
+    .testimonial__icon {
+        transform: scale(0.7);
+        right: -30px;
+        top: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .testimonial .quote {
+        margin-top: 4rem;
+        font-size: 3rem;
+    }
+
+    .testimonial__body {
+        margin-left: 2rem;
+    }
+
+    .testimonial__icon {
+        right: -25px;
     }
 }
