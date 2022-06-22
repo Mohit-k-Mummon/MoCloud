@@ -116,6 +116,7 @@ a {
     padding: 0.8rem 2.5rem;
     border-radius: 30px;
     font-size: 2rem;
+    white-space: nowrap;
 }
 
 .badge--small {
@@ -131,10 +132,17 @@ a {
     background: var(--color-primary);
 }
 
+.card .badge--primary {
+    background: #126de4;
+}
+
 .badge--secondary {
     background: var(--color-secondary);
 }
 
+.card .badge--secondary {
+    background: #02cdf1;
+}
 
 @media screen and (min-width:768px) {
     .badge {
@@ -176,6 +184,7 @@ a.btn--stretched {
     letter-spacing: 1px;
     padding: 2.5rem 3rem;
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .btn--block {
@@ -212,6 +221,7 @@ a.btn--stretched {
 }
 
 .btn.btn--outline {
+    background: #fff;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
     padding: 1.9rem 3rem;
@@ -318,12 +328,16 @@ a.btn--stretched {
     width: 100%;
     height: 100%;
     border-radius: 7px;
-    box-shadow: 0 0 20px 4px lightgrey;
+    box-shadow: 0 0 50px 5px lightgrey;
     overflow: hidden;
 }
 
 .card__content {
-    padding: 2rem;
+    padding: 2rem 4rem;
+}
+
+.card__header {
+    color: #fff;
 }
 
 .card--primary .card__header {
@@ -332,4 +346,84 @@ a.btn--stretched {
 
 .card--secondary .card__header {
     background: var(--color-secondary);
+}
+
+
+
+
+/* Plans */
+.plan__name {
+    margin: 0;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.plan__price {
+    display: inline-block;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.plan__billing-cycle {
+    display: inline-block;
+    opacity: 0.8;
+    font-size: 2.4rem;
+    margin: 0 1rem 0 0.5rem;
+    position: relative;
+    bottom: 5px;
+}
+
+.plan .badge {
+    position: relative;
+    bottom: 10px;
+}
+
+.plan__description {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.plan__list {
+    font-size: 2.4rem;
+    color: var(--color-headings);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.plan--popular .card {
+    position: relative;
+}
+
+.plan--popular .card__header::before {
+    content: url( /images/popular.svg);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    top: -7px;
+}
+
+@media screen and (min-width: 768px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__price {
+        font-size: 5rem;
+    }
+
+    .plan__billing-cycle {
+        font-size: 1.6rem;
+    }
+
+    .plan__description {
+        font-size: 1.6rem;
+    }
+
+    .plan__list {
+        font-size: 1.8rem;
+    }
 }
