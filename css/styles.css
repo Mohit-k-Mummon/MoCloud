@@ -4,7 +4,7 @@
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
     --color-headings: #1b0760;
-    --color-body: #918ca4;
+    --color-body: #5c5577;
 }
 
 *,
@@ -456,6 +456,7 @@ a.btn--stretched {
 /* Media */
 .media {
     display: flex;
+    padding-left: 4rem;
 }
 
 .media__image {
@@ -484,5 +485,58 @@ a.btn--stretched {
 
     .media__text {
         font-size: 1.8rem;
+    }
+}
+
+
+
+
+/* Quotes */
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.quote::before {
+    content: open-quote;
+}
+
+.quote::after {
+    content: close-quote;
+}
+
+.quote__author {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.quote__body {
+    margin-left: 1.5rem;
+}
+
+.quote__company {
+    font-size: 2rem;
+    opacity: 0.4;
+}
+
+.quote__line {
+    position: relative;
+    bottom: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .quote {
+        font-size: 2.4rem;
+    }
+
+    .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .quote__company {
+        font-size: 1.6rem;
     }
 }
