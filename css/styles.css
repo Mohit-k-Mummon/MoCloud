@@ -703,3 +703,24 @@ a.btn--stretched {
     max-height: 100%;
     opacity: 1;
 }
+
+
+
+
+/* Blocks */
+.block--dark {
+    background: #000;
+}
+
+.block--skewed-left {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.block--skewed-right {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
