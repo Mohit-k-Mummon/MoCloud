@@ -11,6 +11,8 @@
 ::before,
 ::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -682,21 +684,16 @@ a.btn--stretched {
     display: flex;
     justify-content: space-between;
 }
+
 .collapsible__toggler {
     width: 50px;
-    transform: rotate(-90deg);
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .collapsible__content {
     max-height: 0vh;
     opacity: 0;
     transition: max-height 0.3s, opacity 0.3s;
-}
-
-.collapsible--expanded .collapsible__toggler {
-    transform: rotate(0);
 }
 
 .collapsible--expanded .collapsible__content {
@@ -729,4 +726,79 @@ a.btn--stretched {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+
+
+
+/* Navigation Bar */
+.nav-background {
+    background: #000;
+}
+
+.nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+    align-items: center;
+}
+
+.nav .list {
+    width: 100%;
+    margin: 0;
+}
+
+.nav .list__item {
+    cursor: pointer;
+    color: rgb(216, 216, 216);
+    font-size: 2.4rem;
+    border-bottom: 1px solid #222;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav .list__item:hover {
+    color: #fff;
+}
+
+.nav__menu-icon {
+    filter: invert(1);
+    width: 50px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.nav__brand {
+    transform: translateY(4px);
+    position: relative;
+    right: 25px;
+    margin-left: 1rem;
+}
+
+.collapsible--expanded .nav__menu-icon {
+    opacity: 1;
+    box-shadow: 0 0 4px 3px rgba(255, 255, 255, 0.52);
+    border-radius: 6px;
+}
+
+@media screen and (min-width:768px) {
+    .nav__menu-icon {
+        display: none;
+    }
+
+    .nav .list {
+        display: flex;
+        width: auto;
+        max-height: 100%;
+        opacity: 1;
+        padding-right: 2rem;
+    }
+
+    .nav .list__item {
+        font-size: 1.6rem;
+        border: none;
+        margin: 0 1rem;
+    }
 }
