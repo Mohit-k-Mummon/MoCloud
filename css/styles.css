@@ -669,3 +669,37 @@ a.btn--stretched {
         margin: 0 3rem;
     }
 }
+
+
+
+
+/* Collapsible */
+.collapsible__heading {
+    margin: 0;
+}
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__toggler {
+    width: 50px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.collapsible__content {
+    max-height: 0vh;
+    opacity: 0;
+    transition: max-height 0.3s, opacity 0.3s;
+}
+
+.collapsible--expanded .collapsible__toggler {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+}
