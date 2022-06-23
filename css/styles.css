@@ -152,7 +152,7 @@ a {
     background: #02cdf1;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     .badge {
         font-size: 1.5rem;
         padding: 0.8rem 1.5rem;
@@ -360,12 +360,13 @@ a.btn--stretched {
     width: 100%;
     height: 100%;
     border-radius: 7px;
-    box-shadow: 0 0 50px 5px lightgrey;
+    box-shadow: 0 0 20px 3px lightgrey;
     overflow: hidden;
+    line-height: 1.35;
 }
 
 .card__content {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
 }
 
 .card__header {
@@ -384,6 +385,16 @@ a.btn--stretched {
 
 
 /* Plans */
+.plan {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.plan:hover {
+    transform: scale(1.05);
+}
 .plan__name {
     margin: 0;
     color: #fff;
@@ -409,6 +420,8 @@ a.btn--stretched {
 .plan .badge {
     position: relative;
     bottom: 10px;
+    display: inline-block;
+    margin-top: 5px;
 }
 
 .plan__description {
@@ -422,6 +435,12 @@ a.btn--stretched {
     color: var(--color-headings);
     font-weight: 500;
     margin-bottom: 2rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.plan__list-extra-margin-bottom {
+    margin-bottom: 6.4rem;
 }
 
 .plan--popular .card {
@@ -431,33 +450,41 @@ a.btn--stretched {
 .plan--popular .card__header::before {
     content: url( /images/popular.svg);
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     position: absolute;
     right: 5%;
-    top: -7px;
+    top: -6px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:1024px) {
+    .plan--popular {
+        transform: scale(1.1);
+    }
+    
+    .plan--popular:hover {
+        transform: scale(1.15);
+    }
     .plan__name {
         font-size: 1.4rem;
     }
-
+    
     .plan__price {
         font-size: 5rem;
     }
-
+    
     .plan__billing-cycle {
         font-size: 1.6rem;
     }
-
+    
     .plan__description {
         font-size: 1.6rem;
     }
-
+    
     .plan__list {
         font-size: 1.8rem;
     }
+    
 }
 
 
@@ -886,4 +913,23 @@ a.btn--stretched {
         gap: 0 2rem;
         font-size: 1.5rem;
         }
+}
+
+
+
+
+/* Plans block */
+.block-plans .grid {
+    gap: 2rem;
+}
+
+.block-plans .grid--1x3 {
+    grid-template-columns: auto;
+}
+
+@media screen and (min-width:1024px) {
+    .block-plans .grid--1x3 {
+        gap: 2rem 4rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
