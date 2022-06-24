@@ -10,6 +10,7 @@
 *,
 ::before,
 ::after {
+    border: 1px solid red;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -913,6 +914,7 @@ a.btn--stretched {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     justify-items: center;
+    align-items: center;
     font-weight: 700;
     gap: 2rem;
 }
@@ -920,6 +922,13 @@ a.btn--stretched {
 .domain__tagline {
     max-width: 70ch;
     margin: 0 auto;
+}
+
+@media screen and (max-width:375px) {
+    .domain-list {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
 }
 
 @media screen and (min-width:768px) {
