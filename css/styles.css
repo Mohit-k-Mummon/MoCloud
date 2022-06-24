@@ -648,6 +648,10 @@ a.btn--stretched {
     top: 30px;
 }
 
+.testimonial .media {
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width:375px) {
     .testimonial__icon {
         transform: scale(0.7);
@@ -1012,4 +1016,15 @@ a.btn--stretched {
     .block-showcase .block__heading {
         margin-bottom: 4rem;
     }
+}
+
+
+
+
+
+/* Testimonial Block */
+.block-testimonial .block__header {
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 1.3;
 }
