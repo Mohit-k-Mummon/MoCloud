@@ -702,7 +702,7 @@ a.btn--stretched {
 }
 
 .callout .btn {
-    margin-bottom: 6rem;
+    margin: 2rem 0 6rem 0;
 }
 
 @media screen and (min-width:768px) {
@@ -712,7 +712,11 @@ a.btn--stretched {
 
     .callout__header {
         text-align: left;
-        margin: 2rem 4rem;
+        margin: 4rem 4rem;
+    }
+
+    .callout__heading {
+        margin-top: 0;
     }
 
     .callout .btn {
@@ -1029,6 +1033,10 @@ a.btn--stretched {
 
 
 /* Testimonial Block */
+
+.block-testimonial {
+    padding-bottom: 25rem;
+}
 .block-testimonial .block__header {
     text-align: center;
     margin-bottom: 4rem;
@@ -1041,6 +1049,8 @@ a.btn--stretched {
 /* Footer */
 .footer {
     background: #232323;
+    position: relative;
+    padding-top: 0;
 }
 
 .footer__heading {
@@ -1089,6 +1099,15 @@ a.btn--stretched {
     font-size: 2.2rem;
 }
 
+.footer .callout {
+    bottom: 150px;
+    position: relative;
+}
+
+.footer .card {
+    box-shadow: none;
+}
+
 @media screen and (min-width:768px) {
     .grid__footer {
         display: grid;
@@ -1127,5 +1146,10 @@ a.btn--stretched {
 
     .footer .list__item {
         padding-left: 0;
+    }
+
+    .footer .callout {
+        position: relative;
+        bottom: 50px;
     }
 }
