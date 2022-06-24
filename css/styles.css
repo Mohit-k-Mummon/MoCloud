@@ -933,3 +933,39 @@ a.btn--stretched {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
+/* Features */
+.feature__header {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.feature__image {
+    width: 100%;
+}
+
+.feature {
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 12rem;
+}
+
+.feature__text {
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .feature {
+        margin-bottom: 16rem;
+    }
+    .feature__header {
+        margin-bottom: 4rem;
+    }
+    .feature:nth-of-type(even) .feature__picture{
+        order: -1;
+    }
+}
