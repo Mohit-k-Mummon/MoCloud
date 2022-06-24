@@ -1050,13 +1050,14 @@ a.btn--stretched {
 .footer {
     background: #232323;
     position: relative;
-    padding-top: 0;
+    padding: 0 2rem;
 }
 
 .footer__heading {
     margin: 2rem 0;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 3rem;
 }
 
 .footer .list {
@@ -1095,7 +1096,7 @@ a.btn--stretched {
 
 .footer .copyright {
     color: #aaaaaa;
-    opacity: 0.2;
+    opacity: 0.4;
     font-size: 2.2rem;
 }
 
@@ -1108,11 +1109,17 @@ a.btn--stretched {
     box-shadow: none;
 }
 
+.grid__footer {
+    position: relative;
+    bottom: 100px;
+}
+
 @media screen and (min-width:768px) {
     .grid__footer {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 0 2rem;
+        bottom: 0;
     }
 
     .footer__heading {
@@ -1151,5 +1158,9 @@ a.btn--stretched {
     .footer .callout {
         position: relative;
         bottom: 50px;
+    }
+
+    .footer .copyright {
+        font-size: 1.5rem;
     }
 }
