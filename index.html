@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MoCloud - Go online for $9</title>
   </head>
   <body>
@@ -34,7 +35,7 @@
       </nav>
     </div>
     <section class="block block--dark block--skewed-left hero">
-      <div class="grid grid--1x2 container">
+      <div data-aos="zoom-in-up" class="grid grid--1x2 container">
         <header class="block__header hero__header">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="block__tagline">
@@ -54,7 +55,7 @@
       </div>
     </section>
     <section class="block container block-domain">
-      <header class="block__header domain__header">
+      <header data-aos="fade-up" class="block__header domain__header">
         <h2 class="block__heading">
           The best webhosting Starting at per month
         </h2>
@@ -64,7 +65,7 @@
           repellat vel ipsam corporis?
         </p>
       </header>
-      <div class="input-group">
+      <div data-aos="zoom-in" class="input-group">
         <input
           class="input"
           type="text"
@@ -79,7 +80,7 @@
           Search
         </button>
       </div>
-      <ul class="list domain-list">
+      <ul data-aos="zoom-in" class="list domain-list">
         <li>.com $9.26</li>
         <li><span class="badge badge--secondary">.sg $7.91</span></li>
         <li>.space $12.98</li>
@@ -89,7 +90,7 @@
       </ul>
     </section>
     <section class="block container block-plans">
-      <div class="grid grid--1x3">
+      <div data-aos="zoom-in-up" class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
             <header class="card__header">
@@ -175,14 +176,14 @@
       </div>
     </section>
     <section class="block container block-feature">
-      <header class="block__header feature__header">
+      <header data-aos="zoom-in" class="block__header feature__header">
         <h2 class="block__heading">Host On The Cloud to Keep Growing</h2>
         <p class="block__tagline">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
           doloremque.
         </p>
       </header>
-      <div class="grid grid--1x2 feature">
+      <div data-aos="flip-left" class="grid grid--1x2 feature">
         <div class="feature__body">
           <div class="icon-container">
             <svg class="icon icon--primary icon--small">
@@ -207,7 +208,7 @@
           <img class="feature__image" src="images/easy@2x.jpg" alt=""
         /></picture>
       </div>
-      <div class="grid grid--1x2 feature">
+      <div data-aos="flip-right" class="grid grid--1x2 feature">
         <div class="feature__body">
           <div class="icon-container">
             <svg class="icon icon--primary icon--small">
@@ -232,7 +233,7 @@
           <img class="feature__image" src="images/Fast@2x.jpg" alt=""
         /></picture>
       </div>
-      <div class="grid grid--1x2 feature">
+      <div data-aos="flip-left" class="grid grid--1x2 feature">
         <div class="feature__body">
           <div class="icon-container">
             <svg class="icon icon--primary icon--small">
@@ -257,7 +258,7 @@
           <img class="feature__image" src="images/wordpress@2x.jpg" alt=""
         /></picture>
       </div>
-      <div class="grid grid--1x2 feature">
+      <div data-aos="flip-right" class="grid grid--1x2 feature">
         <div class="feature__body">
           <div class="icon-container">
             <svg class="icon icon--primary icon--small">
@@ -284,11 +285,11 @@
       </div>
     </section>
     <section class="block block--dark block--skewed-right block-showcase">
-      <header class="block__header showcase__header">
+      <header data-aos="fade-up" class="block__header showcase__header">
         <h2 class="block__heading">User-Friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="showcase__picture">
+        <picture data-aos="zoom-in-right" class="showcase__picture">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
@@ -297,7 +298,7 @@
             srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
           <img class="showcase__image" src="images/ipad.png" alt=""
         /></picture>
-        <ul class="list">
+        <ul data-aos="zoom-in-left" class="list">
           <li>
             <div class="media">
               <div class="media__image">
@@ -350,7 +351,7 @@
         </ul>
       </div>
     </section>
-    <section class="block container block-testimonial">
+    <section data-aos="zoom-in-up" class="block container block-testimonial">
       <header class="block__header">
         <h2 class="block__heading">What our Customers are Saying</h2>
         <p class="block__tagline">
@@ -394,14 +395,14 @@
     <footer class="block block--dark footer">
       <div class="container card callout">
         <div class="grid grid--1x2 callout__grid">
-          <header class="callout__header">
+          <div class="callout__header">
             <h2 class="callout__heading">Ready to Get Started?</h2>
             <p class="callout__tagline">
               Choose the hosting provider that helps you start easy, build fast,
               and grow strong! It's risk-free with our 14-day money back
               guarantee.
             </p>
-          </header>
+          </div>
           <a href="" class="btn btn--secondary btn--stretched">Get started</a>
         </div>
       </div>
@@ -471,10 +472,14 @@
         </div>
         <div class="footer__brand">
           <img src="images/logo.svg" alt="" />
-          <p class="copyright">Copyright 2022 Mohit</p>
+          <p class="copyright">Copyright &copy; 2022 Mohit</p>
         </div>
       </div>
     </footer>
     <script src="Javascript/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
